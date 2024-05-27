@@ -1,0 +1,34 @@
+Napraviti jednostavnu stranicu na kojima će biti 3 input polja za unos podataka
+- Ime
+- Prezime
+- email
+dodati i dva buttona
+- Pošalji
+- Reset
+
+Zadatak JS:
+- na focus svakog od input polja polje treba poprimiti žutu boju
+- na izlasku is svakog polja
+	- ukoliko je polje popunjeno polje treba poprimiti svijetlo sivu boju
+	- ukoliko je polje ostalo prazno, polje treba poprimiti crvenu boju
+- na izlasku iz polja email
+	- ukoliko polje ne sadržava znak "@" obojati ga u crveno (ili provjeriti/implementirati cijelu provjeru za ispravan email; hint regexp)
+	- ukoliko je polje ispravno popunjeno, obojati ga u svijetlo sivu boju
+
+- Button pošalji mora obaviti sljedeću provjeru:
+	- provjeriti da su sva polja popunjena, odnosno ispravno popunjena (polje email mora sadržavati znak "@")
+	- ukoliko neko od polja nije popunjeno, naznačiti korisniku da je polje prazno ili je neispravno popunjeno
+	- ukoliko su sva polja popunjena, odnosno ispravno popunjena, izbaciti korisniku confirmation dialog "Želite li poslati podatke"
+		- Ukoliko je korisnik odgovorio sa "Yes" 
+			- Obavijestiti korisnika da su podaci poslani -> izbaciti alert poruku "Podaci su poslani"
+			- nakon izbacivanja poruke, očistiti podatke na stranici
+				- isprazniti sva polja
+				- polja resetirati u bijelu boju
+		- Ukoliko je korisnik odgovorio "No" - ništa ne napraviti
+
+- Button reset mora upitati korisnika "Želite li poslati podatke"
+		- Ukoliko je korisnik odgovorio sa "Yes" 
+			- očistiti podatke na stranici
+				- isprazniti sva polja
+				- polja resetirati u bijelu boju
+		- Ukoliko je korisnik odgovorio "No" - ništa ne napraviti
